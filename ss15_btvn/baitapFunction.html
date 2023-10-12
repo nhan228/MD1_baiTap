@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // function w() {
+        //     var arr = Array.from(arguments); 
+        //     var result = arr.join(' - ');
+        //     console.log(result);
+        // }
+
+        // w('a', 'b', 'c');
+
+        // function myF(param) {
+        //     if (typeof param === 'function') {
+        //         param('a')
+        //     }
+        // }
+        // function myCall(a) {
+        //     console.log("ra ", a);
+
+        // }
+        // myF(myCall)
+
+
+        var course2 = [
+            {
+                name: "Dart",
+                price: 680,
+                isFinish: true
+            },
+            {
+                name: "JS",
+                price: 0,
+                isFinish: false
+            },
+            {
+                name: "Node",
+                price: 400,
+                isFinish: true
+            }
+        ];
+
+        var filteredCourses = course2.filter(course => {
+            const charN = course.name.toLowerCase();
+            return charN.includes('n');
+        });
+
+        console.log(filteredCourses);
+
+
+    </script>
+</body>
+
+</html>

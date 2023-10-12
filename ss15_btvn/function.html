@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Bài 1
+
+        // function findSmallest() {
+        //     let n = 1;
+
+        //     // flag=true;
+        //     while (true) {
+        //         if (n % 5 === 0 && n % 7 === 0 && n % 11 === 0) {      
+        //             return alert(`Số nguyên dương nhỏ nhất chia hết cho 5, 7 và 11 là: ${n}`);
+        //         }
+        //         n++;
+        //     }
+        // }
+        // findSmallest()
+
+
+
+        // Bài 2
+
+
+
+
+        // Global
+        // alert('Hãy nhập cho tôi 4 số để tạo thành mảng:')
+
+        // var a = parseInt(prompt('Nhập số đầu tiên'))
+        // var b = parseInt(prompt('Nhập số thứ hai'))
+        // var c = parseInt(prompt('Nhập số thứ ba'))
+        // var d = parseInt(prompt('Nhập số thứ tư'))
+
+        // var arr = [];
+        // arr.push(a, b, c, d)
+        // alert('Mảng của bạn hiện tại là: ' + arr.join(', '))
+
+        //a. Function tìm lớn nhất nè
+        // function findMax(arr) {
+        //     if (arr.length === 0) {
+        //         return undefined;
+        //     }
+
+        //     let max = arr[0];
+
+        //     for (let i = 1; i < arr.length; i++) {
+        //         if (arr[i] > max) {
+        //             max = arr[i];
+        //         }
+        //     }
+        //     return max;
+        // }
+
+
+        // var maxNum = findMax(arr);
+        // alert('Số lớn nhất trong mảng là: ' + maxNum);
+
+
+        //b. Function trả về số lẻ lớn nhất trong mảng nè
+        // function findMaxOdd() {
+        //     var maxOdd=arr[0];
+
+        //     for (let i = 0; i < arr.length; i++) {
+        //         if (arr[i] % 2 !== 0 && arr[i] >= maxOdd) {
+        //             maxOdd = arr[i];
+        //         }
+        //     }
+        //     if (maxOdd !== 0) {
+        //         return maxOdd;
+        //     } else {
+        //         return 'Không có số lẻ trong mảng.';
+        //     }
+        // }
+
+        // var maxOddNum = findMaxOdd();
+        // alert('Số lẻ lớn nhất trong mảng là: ' + maxOddNum);
+
+
+
+        // c.Function tính giai thừa của một số nguyên dương
+        // function fac() {
+        //     var a = parseInt(prompt('Hãy nhập một số nguyên dương để tính giai thừa: '));
+
+        //     if (a < 0) {
+        //         alert('Vui lòng nhập một số nguyên dương.');
+        //     } else {
+        //         var result = 1;
+        //         for (let i = 1; i <= a; i++) {
+        //             result *= i;
+        //         }
+        //         alert('Giai thừa của ' + a + ' là ' + result);
+        //     }
+        // }
+
+        // fac();
+
+
+        // Bài 3
+
+        // primeTest();
+
+        // function isPrime(num) {
+        //     if (num <= 1) {
+        //         return false;
+        //     }
+        //     for (let i = 2; i <= Math.sqrt(num); i++) {
+        //         if (num % i === 0) {
+        //             return false;
+        //         }
+        //     }
+        //     return true;
+        // }
+
+        // function primeTest() {
+        //     let count = 0;
+        //     let num = 2;
+
+        //     while (count < 20 && num < 100) {
+        //         if (isPrime(num)) {
+        //             console.log(num);
+        //             count++;
+        //         }
+        //         num++;
+        //     }
+        // }
+
+
+        // Bài 4
+
+        // var a=parseInt(prompt('Hãy nhập tuôi 1 chuỗi cần đảo: '))
+        // function reverse(){
+
+        // }
+
+        w3('a', 'b', 'c')
+        function w3() {
+            console.log(arguments);
+
+            // return w3;
+        }
+
+        // var a=w3()
+        // console.log(typeof a);
+
+
+    </script>
+</body>
+
+</html>

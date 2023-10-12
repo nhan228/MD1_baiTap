@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Session3-Homework</title>
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
+    <link href="./style.css" rel="stylesheet"/>
+   
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="icon">
+            Rikkei_Acaddemy_Shop
+        </div>
+        <input type="text" placeholder="Tìm kiếm theo tên sản phẩm" class="header_input"/>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <ul class="header_nav">
+            <li><i class="fa-solid fa-cart-shopping"></i>Giỏ hàng</li>
+            <li>Đăng nhập</li>
+            <li>Đăng ký</li>
+        </ul>
+        <i class="fa-solid fa-bars"></i>
+    </header>
+
+<!--carousel-->
+    <section class="carousel">
+        <ol class="carousel__viewport">
+
+            <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+                <div class="carousel__snapper">
+                    <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
+                    <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+                </div>
+            </li>
+
+            <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+                <div class="carousel__snapper">
+                    <a href="#carousel__slide1" class="carousel__prev">Go to last slide</a>
+                    <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+                </div>
+            </li>
+
+            <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+                <div class="carousel__snapper">
+                    <a href="#carousel__slide2" class="carousel__prev">Go to last slide</a>
+                    <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
+                </div>
+            </li>
+
+            </li>
+            <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+                <div class="carousel__snapper">
+                    <a href="#carousel__slide3" class="carousel__prev">Go to last slide</a>
+                    <a href="#carousel__slide1" class="carousel__next">Go to next slide</a>
+                </div>
+            </li>
+        </ol>
+
+        <aside class="carousel__navigation">
+            <ol class="carousel__navigation--list">
+                <li class="carousel__navigation--item">
+                    <a href="#carousel__slide1" class="carousel__navigation--button">Go to slide 1</a>
+                </li>
+
+                <li class="carousel__navigation--item">
+                    <a href="#carousel__slide2" class="carousel__navigation--button">Go to slide 2</a>
+                </li>
+
+                <li class="carousel__navigation--item">
+                    <a href="#carousel__slide3" class="carousel__navigation--button">Go to slide 3</a>
+                </li>
+
+                <li class="carousel__navigation--item">
+                    <a href="#carousel__slide4" class="carousel__navigation--button">Go to slide 4</a>
+                </li>
+            </ol>
+        </aside>
+    </section>
+<!--end carousel-->
+
+    <div class="controller">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <main>
+        <div class="content">
+            <div class="content_nav">
+                <div class="content__nav--top">
+                    <i class="fa-solid fa-bars"></i>
+                    <span>Danh Mục</span>
+                </div>
+                <ul class="nav_list">
+                    <li class="nav_item active">
+                        <i class="fa-solid fa-caret-right"></i>
+                        Tất cả danh mục
+                    </li>
+                    <li class="nav_item">Thiết bị điện tử</li>
+                    <li class="nav_item">Sách</li>
+                    <li class="nav_item">Đồ Tiêu Dùng</li>
+                    <li class="nav_item">Thời Trang</li>
+                </ul>
+            </div>
+            <div class="content_main">
+                <div class="item">
+                    <img src="./img/iphone11promax.jpg" alt="iphone12pm"/>
+                    <p class="name">Iphone 12 pro max</p>
+                    <div class="price">
+                        <span>35.000.000đ</span>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-heart"></i>
+                        <span classs="sold">48 đã bán</span>
+                    </div>
+                    <div>
+                        <p>Apple</p>
+                        <p>Hà Nội</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/DacNhanTam.jpg" alt="Đắc nhân tâm" alt="Đắc nhân tâm"/>
+                    <p class="name">Đắc nhân tâm</p>
+                    <div class="price">
+                        <span>56.100đ</span>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-heart"></i>
+                        <span classs="sold">16498 đã bán</span>
+                    </div>
+                    <div>
+                        <p>Hà Nội</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/haohao.jpg" alt="Hảo Hảo"/>
+                    <p class="name">Thùng mỳ Hảo Hảo</p>
+                    <div class="price">
+                        <span>108.000đ</span>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-heart"></i>
+                        <span classs="sold">14905 đã bán</span>
+                    </div>
+                    <div>
+                        <p>Hà Nội</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/BiaHeineken.jpg" alt="heiniken"/>
+                    <p class="name">Thùng bia Heineken</p>
+                    <div class="price">
+                        <span>405.000đ</span>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-heart"></i>
+                        <span classs="sold">6843 đã bán</span>
+                    </div>
+                    <div>
+                        <p>Hồ Chí Minh</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/sunlight.jpg" alt="SunLight"/>
+                    <p class="name">Nước rửa chén SunLight</p>
+                    <div class="price">
+                        <span>91.000đ</span>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-heart"></i>
+                        <span classs="sold">48 đã bán</span>
+                    </div>
+                    <div>
+                        <p>Hà Nội</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div>
+            <p class="title">Chăm sóc khách hàng</p>
+            <ul>
+                <li>Trung tâm trợ lý</li>
+                <li>Hướng dẫn mua hàng</li>
+            </ul>
+        </div>
+        <div>
+            <p class="title">Giới thiệu</p>
+            <ul>
+                <li>Điều khoản</li>
+                <li>Chính sách bảo mật</li>
+                <li>Tuyển dụng</li>
+            </ul>
+        </div>
+        <div>
+            <p class="title">Danh mục sản phẩm</p>
+            <ul>
+                <li>Thời trang</li>
+                <li>Đồ tiêu dùng</li>
+                <li>Thiết bị điện tử</li>
+                <li>Sách</li>
+            </ul>
+        </div>
+        <div>
+            <p class="title">Theo dõi chúng tôi</p>
+            <ul>
+                <li><i class="fa-brands fa-facebook"></i>Facebook</li>
+                <li><i class="fa-brands fa-instagram"></i>Instagram</li>
+                <li><i class="fa-brands fa-twitter"></i>Twitter</li>
+            </ul>
+        </div>
+        <div>
+            <p class="title">Đội ngũ phát triển</p>
+            <ul>
+                <li>HCM_JS230915</li>
+            </ul>
+        </div>
+
+    </footer>
+</div>
+
+</body>
+</html>

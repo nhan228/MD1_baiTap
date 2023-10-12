@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="timer" style=" display: flex; 
+                            align-items: center; 
+                            justify-content: center;">
+    </div>
+    
+
+    <script>
+
+        // Bài 1
+
+        // Global
+        // var name = "Nhân";
+        // var year_of_birth = 2001;
+
+        // 1.1
+
+        // var person = {
+        //     name,
+        //     year_of_birth,
+        //     address: "HCM"
+        // };
+
+        // console.log(person);
+        // document.write("<p>Name: " + person.name + "</p>");
+        // document.write("<p>Year of Birth: " + person.year_of_birth + "</p>");
+        // document.write("<p>Address: " + person.address + "</p>");
+
+        // 1.2
+
+        // var date = new Date();
+        // var current_Year = date.getFullYear();
+
+        // var age = current_Year - year_of_birth;
+
+        // var person = {
+        //     name,
+        //     year_of_birth,
+        //     address: "HCM"
+        // };
+
+        // console.log(person);
+        // document.write(`<p>Name: ${person.name}</p>`);
+        // document.write(`<p>Year of Birth: ${person.year_of_birth}</p>`);
+        // document.write(`<p>Address: ${person.address}</p>`);
+        // document.write(`<p> ${person.name} is ${age} years old.</p>`);
+
+
+
+        // Bài 2
+
+        // var object1 = {
+        //     foo: "bar",
+        //     a: 5
+        // };
+
+        // var object2 = {
+        //     name: "foo",
+        //     d: 10
+        // };
+
+        // var obj={ ...object2, ...object1 };
+
+        // console.log(obj);
+
+
+        // //     Bài 2
+        // let object1 = { foo: "bar", a: 5 };
+        // let object2 = { name: "foo", d: 10 };
+
+        // let object3 = { ...object2, ...object1 };
+
+        // console.log(object3);
+
+        // Cách 2
+        // const originalObject = {
+        //     name: "John",
+        //     age: 30,
+        //     address: {
+        //         street: "123 Main St",
+        //         city: "New York",
+        //         postalCode: "10001",
+        //     },
+        // };
+        // let object3=Object.assign({originalObject},object2,object1)
+
+        // console.log(object3);
+
+
+        // Cách 3
+        // let object3=JSON.stringify(object1,object2)
+
+        // console.log(JSON.parse(object3));
+
+
+
+        // Bài 3
+
+        // var year = 2012;
+        // var month = parseInt(prompt('Hãy nhập tháng để tính ngày: '));
+
+        // function getLastDayOfMonth(year, month) {
+        //     var lastDayOfMonth = new Date(year, month, 0);
+        //     var day = lastDayOfMonth.getDate();
+
+        //     return day;
+        // }
+
+        // var lastDay = getLastDayOfMonth(year, month);
+        // console.log(lastDay);
+
+
+        //  Excersice 3:
+        // const year = parseInt(prompt("Input year: "));
+        // const month = parseInt(prompt("Input month: "));
+        // function getLastDayOfMonth(year, month) {
+        //     switch (month) {
+        //         case 1:
+        //         case 3:
+        //         case 5:
+        //         case 7:
+        //         case 8:
+        //         case 10:
+        //         case 12:
+        //             alert(31);
+        //             break;
+        //         case 4:
+        //         case 6:
+        //         case 9:
+        //         case 11:
+        //             alert(30);
+        //             break;
+        //         case 2:
+        //             if ((year !== 4 && year !== 100) || year === 400) {
+        //                 alert(29);
+        //                 break;
+        //             } else {
+        //                 alert(28);
+        //             }
+        //     }
+        // }
+        // getLastDayOfMonth(year, month);
+
+
+        // Bài 4
+
+        // while (true) {
+        //     var input = parseInt(prompt('Hãy nhập cho tôi năm sinh để tính tuổi: '))
+        //     var current_Year = new Date().getFullYear()
+        //     var age = current_Year - input;
+        //     if (input > 0){
+        //         alert(`Năm nay bạn ${age} tuổi`)
+        //     }else {
+        //         alert('Hãy nhập cho đúng giùm !!')
+        //     }
+        // }
+
+
+
+        // Bài 5
+
+        var input = parseInt(prompt('Hãy nhập vào thời gian bạn mốn bắt đầu đếm ngược (số phút): '));
+        var startTime = input * 60;
+
+        displayTime(startTime);
+
+        var countdownInterval = setInterval(function () {
+            startTime--;
+            displayTime(startTime);
+
+            if (startTime === 0) {
+                clearInterval(countdownInterval);
+                alert("Hết thời gian!");
+            }
+        }, 1000);
+
+        function displayTime(timeInSeconds) {
+            var minutes = Math.floor(timeInSeconds / 60);
+            var seconds = timeInSeconds % 60;
+
+            var displayMinutes = minutes < 10 ? "0" + minutes : minutes;
+            var displaySeconds = seconds < 10 ? "0" + seconds : seconds;
+
+            document.getElementById('timer').innerHTML = (`${displayMinutes} : ${displaySeconds}`)
+        }
+
+
+
+
+
+        // function countdown(minutes = 1) {
+        //     let seconds = minutes * 60;
+        //     const timerElement = document.getElementById("timer");
+
+        //     const timer = setInterval(() => {
+        //         if (seconds <= 0) {
+        //             clearInterval(timer);
+        //             timerElement.textContent = "Your time is up!";
+        //         } else {
+        //             timerElement.textContent = seconds;
+        //             seconds--;
+        //         }
+        //     }, 1000);
+        // }
+
+        // countdown(1);
+
+
+    </script>
+</body>
+
+</html>

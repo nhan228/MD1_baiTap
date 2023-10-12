@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        // Bài 3
+        // var p = parseInt(prompt('Physics (0-10): '))
+        // var c= parseInt(prompt('Chemistry (0-10): '))
+        // var b = parseInt(prompt('Biology (0-10):  '))
+        // var m = parseInt(prompt('Mathematics (0-10): '))
+        // var com = parseInt(prompt('Computer (0-10): '))
+        // var total=((p+c+b+m+com)/50)*100
+
+        // if(total >= 40){
+        //     if(total>=90){
+        //         alert('Grade A')
+        //         console.log('A');
+        //     }else if(total>=80){
+        //         alert('Grade B')
+        //     }else if(total>=70){
+        //         alert('Grade C')
+        //     }else if(total>=60){
+        //         alert('Grade D')
+        //     }else{
+        //         alert('Grade E')
+        //     }
+        // }else{
+        //     alert('Grade F')
+        // }
+
+
+
+        // Bài 4
+        // var a=3
+        //     b=2 
+        //     c=9
+        //     d=-1
+
+        // var num=[a,b,c,d]
+
+
+        // console.log(num.sort((function(a,b){return (b-a)})).join(' '));
+
+
+        // Bài 5
+        // var a=parseInt(prompt('Hãy nhập năm vào: '))
+
+        // if(a%4 == 0 && a%100 !=0 || a%400 == 0){
+        //     console.log(`Năm ${a} là năm NHUẬN`);
+        // }else{
+        //     console.log(`Năm ${a} là năm KHÔNG NHUẬN`);
+        // }
+
+
+        // Bài 6
+        //     var a=parseFloat(prompt('Nhập cạnh a: '))
+        //     var b=parseFloat(prompt('Nhập cạnh b: '))
+        //     var c=parseFloat(prompt('Nhập cạnh c: '))
+
+
+        // if (a <= 0 || b <= 0 || c <= 0 || (a + b <= c) || (b + c <= a) || (a + c <= b)) {
+        //     console.log( "Not a Triangle !");
+        // } else {
+
+        //     if (a === b && b === c) {
+        //         console.log("Equilateral triangle !");
+        //     } else if (a === b || b === c || a === c) {
+        //         console.log("Isosceles triangle !"); 
+        //     } else if (a **2 + b**2 === c**2 || b **2 + c**2 === a **2 || a**2 + c**2 === b**2) {
+        //         console.log("Right triangle !");
+        //     } else if (a**2 + b**2 < c**2 || b**2 + c**2 < a **2 || a**2 + c**2 < b**2) {
+        //         console.log( "Obtuse triangle !");
+        //     } else {
+        //         console.log( "Acute triangle !");
+        //     }
+        // }
+
+        // Bài 7
+        // var input = prompt("Nhập một ký tự:");
+
+
+        // if (input.length === 1) {
+        //     var charCode = input.charCodeAt(0);
+
+        //     if (charCode >= 65 && charCode <= 90) {
+        //         console.log("upper-case alphabet");
+        //     } else if (charCode >= 97 && charCode <= 122) {
+        //         console.log("lower-case alphabet");
+        //     } else {
+        //         console.log("not an alpabet");
+        //     }
+        // } else {
+        //     console.log("Nhập không hợp lệ");
+        // }
+
+
+
+        // Bài 8
+        // var a=parseInt(prompt('Hãy nhập số nguyên a: '))
+        // var b=parseInt(prompt('Hãy nhập số nguyên b: '))
+        // var c=parseInt(prompt('Hãy nhập số nguyên c: '))
+
+        // if(a<=b|| b<=c || a>=b || b>=c){
+        //     if(a<=b &&  b<=c){
+        //         console.log('Increasing')
+        //     }else if(a >= b && b >= c){
+        //         console.log('Decreasing')
+        //     }
+        // }else{
+        //     console.log('Neither increasing nor decreasing order');
+        // }
+
+
+        // Bài 9
+        // var a = parseInt(prompt("Nhập giá trị của a: "));
+        // var c = prompt("Nhập phép toán (+, -, *, /): ");
+        // var b = parseInt(prompt("Nhập giá trị của b: "));
+
+        // var result;
+
+        // switch (c) {
+        //     case '+':
+        //         result = a + b;
+        //         break;
+        //     case '-':
+        //         result = a - b;
+        //         break;
+        //     case '*':
+        //         result = a * b;
+        //         break;
+        //     case '/':
+        //         if (b === 0) {
+        //             console.log("Không thể chia cho 0, OK.");
+        //             break;
+        //         }
+        //         result = a / b;
+        //         break;
+
+        //     default:
+        //         console.log("Phép toán không hợp lệ");
+        //         break;
+        // }
+
+        // if (result !== undefined) {
+        //     console.log("Kết quả: " + result);
+        // }
+
+
+
+        // Bài 10
+        // var year = parseInt(prompt("Nhập năm:  "));
+        // var month = parseInt(prompt("Nhập tháng (1-12): "));
+
+        // var a;
+
+        // switch (month) {
+        //     case 1:
+        //     case 3:
+        //     case 5:
+        //     case 7:
+        //     case 8:
+        //     case 10:
+        //     case 12:
+        //         a = 31;
+        //         break;
+        //     case 4:
+        //     case 6:
+        //     case 9:
+        //     case 11:
+        //         a = 30;
+        //         break;
+        //     case 2:
+        //         if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+        //             a = 29;
+        //         } else {
+        //             a = 28;
+        //         }
+        //         break;
+        //     default:
+        //         console.log("Tháng không hợp lệ.");
+        //         break;
+        // }
+        // console.log(`Tháng ${month} có tổng cộng ${a} ngày`);
+
+
+        // let cars=['a','b']
+        // let arr=new Array('a','b')
+        //     console.log(typeof (cars));
+        //     console.log(typeof (arr));
+        //     console.log(cars);
+        //     console.log(arr);
+
+        
+        // let arr=['a','b','c']
+
+        // arr.[arr.length-1].push('d')
+        // console.log();
+
+        // var arr=[,,,,,,,,,,]
+        // console.log(arr.join('-'));
+
+        // var a=new Array(10)
+        // console.log(a.join('-'));
+
+        // var arr=['B','a','c','D']
+
+        // arr.sort(function(s,t){
+        //     var a=s.toLocaleLowerCase()
+        //     console.log(a);
+        //     var b=t.toLocaleLowerCase()
+        //     console.log(b);
+        //     if(a<b) return -1;
+        //     if(a>b) return 1;
+        //     return 0; 
+        // })
+
+        // console.log(arr);
+
+
+        // let fruits = ["Bananas", "Mangos", "Apples", "Cherries", "Pineapples"];
+
+        
+        // console.log(fruits.pop(-2));
+    </script>
+</body>
+
+</html>

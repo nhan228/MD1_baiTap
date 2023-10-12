@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        var sum = 0
+
+        // Bài 1
+        // var start = parseInt(prompt('Cho tôi con số bắt đầu: ')) //1
+        // var end = parseInt(prompt('Cho tôi con số kết thúc: '))  //10
+
+
+        // for (let i = start; i <= end; i++) {
+        //     if (i % 2 === 0) {
+        //     }
+        // }
+        // document.write(`Tổng các số chẵn nằm trong khoảng từ ${start} đến ${end} là: ${sum}`)
+
+
+        // Bài 2
+        // var n = parseInt(prompt('Nhập số muốn tính giai thừa (số nguyên): '))
+
+        // while (n < 0) {
+        //     alert('Làm gì có giai thừa số âm. Nhập lại dùm !!')
+        //     n = parseInt(prompt('Nhập lại cho đúng số muốn tính giai thừa (số nguyên): '))
+        // }
+
+        // if (n === 0 || n === 1) {
+        //     document.write(`Kết quả của ${n}! là: 1`)
+        // } else {
+        //     let fac = 1
+        //     for (let i = 2; i <= n; i++) {
+        //         fac *= i
+        //     }
+        //     document.write(`Kết quả của ${n}! là: ${fac}`)
+        // }
+
+
+        // Bài 3
+        // Cách 1
+        // var datas = [1, -2, 3, -4, 5, -6, 7, 8, -9];
+
+        // for (let num of datas) {
+        //     if (num > 0) {
+        //         sum += num;
+        //     }
+        // }
+
+        // console.log("Tổng các số dương trong mảng là: " + sum);
+
+
+        //  Cách 2
+        // var input=alert('Nhập tôi 5 số nguyên để tạo thành mảng')
+
+        // var a=parseInt(prompt('Hãy cho tôi số a của mảng: '))
+        // var b=parseInt(prompt('Hãy cho tôi số b của mảng: '))
+        // var c=parseInt(prompt('Hãy cho tôi số c của mảng: '))
+        // var d=parseInt(prompt('Hãy cho tôi số d của mảng: '))
+
+        // var datas = [a, b, c, d];
+
+        // for (let num of datas) {
+        //     if (num > 0) {
+        //         sum += num;
+        //     }
+        // }
+
+        // console.log(`Tổng các số dương trong mảng ${datas} là: ${sum}`);
+
+
+        // Bài 4
+        // Cách 1
+
+        // let datas = [1, 3, 4, 6, 12, 5, 4, 9];
+
+        // for (let i = 0; i < datas.length; i++) {
+        //     let num = datas[i];
+
+        //     if (num % 4 === 0 && num % 3 === 0) {
+        //         break;  
+        //     }
+        //     if (num % 4 === 0) {
+        //         continue;  
+        //     }
+        //     console.log(num);
+        // }
+
+        // Cách 2
+        // var input = alert('Nhập tôi 8 số nguyên để tạo thành mảng')
+
+        // var a = parseInt(prompt('Hãy cho tôi số a của mảng: '))
+        // var b = parseInt(prompt('Hãy cho tôi số b của mảng: '))
+        // var c = parseInt(prompt('Hãy cho tôi số c của mảng: '))
+        // var d = parseInt(prompt('Hãy cho tôi số d của mảng: '))
+        // var e = parseInt(prompt('Hãy cho tôi số e của mảng: '))
+        // var f = parseInt(prompt('Hãy cho tôi số f của mảng: '))
+        // var g = parseInt(prompt('Hãy cho tôi số g của mảng: '))
+        // var h = parseInt(prompt('Hãy cho tôi số h của mảng: '))
+
+        // var datas = [a, b, c, d, e, f, g, h];
+        // var arr=[]
+
+        // for (let i = 0; i < datas.length; i++) {
+        //     let num = datas[i];
+
+        //     if (num % 4 === 0 && num % 3 === 0) {
+        //         break;
+        //     }
+        //     if (num % 4 === 0) {
+        //         continue;
+        //     }
+        //     result=arr.push(num)
+        // }
+        // // console.log(`Các số trong mảng ${datas} thỏa điều kiện là: ${arr}`)
+        // document.write(`Các số trong mảng ${datas} thỏa điều kiện là: ${arr}`)
+
+
+
+        // Bài 5
+
+        // var input = prompt('Hãy nhập 1 chuỗi String muốn đảo lại: ');
+
+        // var reverse = "";
+
+        // for (var i = input.length - 1; i >= 0; i--) {
+        //     reverse += input[i];
+        // }
+        // // console.log(reverse);
+        // document.write(`Kết quả sau khi đảo: ${reverse}`)
+
+
+        // Bài 5.1
+
+        // alert('Menu:'
+        //     + "\n"
+        //     + "1. Kiểm tra tính chẵn lẻ của 1 số."
+        //     + "\n"
+        //     + "2. Kiểm tra số nguyên tố."
+        //     + "\n"
+        //     + "3. Kiểm tra một số có chia hết cho 3 không."
+        //     + "\n"
+        //     + "4. Thoát"
+        // )
+
+        // let choice;
+        // while (true) {
+        //     choice = parseInt(prompt("Nhập lựa chọn của bạn (1-4):"));
+
+        //     switch (choice) {
+        //         case 1:
+        //             let num1 = parseInt(prompt("Nhập số cần kiểm tra tính chẵn lẻ:"));
+        //             if (num1 % 2 === 0) {
+        //                 console.log(`${num1} là số chẵn.`);
+        //             } else {
+        //                 console.log(`${num1} là số lẻ.`);
+        //             }
+        //             break;
+
+        //         case 2:
+        //             let num2 = parseInt(prompt("Nhập số cần kiểm tra số nguyên tố:"));
+        //             let isPrime2 = true;
+        //             if (num2 <= 1) {
+        //                 isPrime2 = false;
+        //             } else {
+        //                 for (let i = 2; i <= Math.sqrt(num2); i++) {
+        //                     if (num2 % i === 0) {
+        //                         isPrime2 = false;
+        //                         break;
+        //                     }
+        //                 }
+        //             }
+        //             if (isPrime2) {
+        //                 console.log(`${num2} là số nguyên tố.`);
+        //             } else {
+        //                 console.log(`${num2} không là số nguyên tố.`);
+        //             }
+        //             break;
+
+        //         case 3:
+        //             let num3 = parseInt(prompt("Nhập số cần kiểm tra chia hết cho 3:"));
+        //             if (num3 % 3 === 0) {
+        //                 console.log(`${num3} chia hết cho 3.`);
+        //             } else {
+        //                 console.log(`${num3} không chia hết cho 3.`);
+        //             }
+        //             break;
+
+        //         case 4:
+        //             console.log("Kết thúc chương trình.");
+        //             break;
+
+        //         default:
+        //             alert("Lựa chọn không hợp lệ. Vui lòng nhập lại.");
+        //             continue;
+        //     }
+        //     break;
+        // }
+
+
+
+        // Bài 6
+        // const PI = 3.14;
+        // let choice;
+        // var process;
+
+        // while (true) {
+        //     choice = parseInt(prompt(
+        //         'Menu:'
+        //     + "\n"
+        //     + "1. Tính chu vi và diện tích hình chữ nhật ."
+        //     + "\n"
+        //     + "2. Tính chu vi và diện tích hình tam giác"
+        //     + "\n"
+        //     + "3. Tính chu vi và diện tích hình tròn."
+        //     + "\n"
+        //     + "4. Thoát"
+        //     +"\n"+"\n"
+        //     +"Nhập lựa chọn của bạn (1->4): "));
+
+        //     switch (choice) {
+        //         case 1:
+        //             const length1 = parseFloat(prompt("Nhập chiều dài hình chữ nhật:"));
+        //             const width1 = parseFloat(prompt("Nhập chiều rộng hình chữ nhật:"));
+        //             const perimeter1 = 2 * (length1 + width1);
+        //             const area1 = length1 * width1;
+        //             alert(`Chu vi của hình chữ nhật là: ${perimeter1}`);
+        //             alert(`Diện tích của hình chữ nhật là: ${area1}`);
+        //             break;
+
+        //         case 2:
+        //             const sideA = parseFloat(prompt("Nhập độ dài cạnh A của tam giác:"));
+        //             const sideB = parseFloat(prompt("Nhập độ dài cạnh B của tam giác:"));
+        //             const sideC = parseFloat(prompt("Nhập độ dài cạnh C của tam giác:"));
+
+        //             if (sideA + sideB > sideC && sideA + sideC > sideB && sideB + sideC > sideA) {
+
+        //                 const perimeter2 = sideA + sideB + sideC;
+        //                 const semiPerimeter = perimeter2 / 2;
+        //                 const area2 = Math.sqrt(
+        //                     semiPerimeter * (semiPerimeter - sideA) * (semiPerimeter - sideB) * (semiPerimeter - sideC)
+        //                 );
+        //                 alert(`Chu vi của tam giác là: ${perimeter2}`);
+        //                 alert(`Diện tích của tam giác là: ${area2}`);
+        //             } else {
+        //                 alert("Tam giác không hợp lệ");
+        //             }
+        //             break;
+
+        //         case 3:
+        //             const radius = parseFloat(prompt("Nhập bán kính của hình tròn:"));
+        //             const perimeter3 = 2 * PI * radius;
+        //             const area3 = PI * Math.pow(radius, 2);
+        //             alert(`Chu vi của hình tròn là: ${perimeter3}`);
+        //             alert(`Diện tích của hình tròn là: ${area3}`);
+        //             break;
+
+        //         case 4:
+        //             alert("Bạn đã chọn thoát khỏi chúng tôi");
+        //             break;
+
+        //         default:
+        //             alert("Làm ơn hãy chọn đúng !!!");
+        //             continue;
+        //     }
+        //     break;
+        // }
+
+
+
+        // Bài 7
+
+        // let isPrime;
+
+        // for (let number = 2; number < 100; number++) {
+        //      isPrime = true;
+
+        //     for (let i = 2; i <= Math.sqrt(number); i++) {
+        //         if (number % i === 0) {
+        //             isPrime = false;
+        //             break;
+        //         }
+        //     }
+
+        //     if (isPrime) {
+        //         document.write(number);
+        //     }
+        // }
+
+        // Bài 8
+
+        // var a, b, c;
+        // var isValidTriangle = false;
+
+        // while (!isValidTriangle) {
+        //     var input = alert('Hãy nhập độ dài 3 cạnh tam giác');
+        //     a = parseInt(prompt('Hãy nhập cạnh a: '));
+        //     b = parseInt(prompt('Hãy nhập cạnh b: '));
+        //     c = parseInt(prompt('Hãy nhập cạnh c: '));
+
+        //     if (a > 0 && b > 0 && c > 0 && a + b > c && a + c > b && b + c > a) {
+        //         isValidTriangle = true;
+        //     } else {
+        //         alert("Các giá trị không hợp lệ. Vui lòng nhập lại.");
+        //     }
+        // }
+
+        // const per = a + b + c;
+        // const s = per / 2;
+        // const area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
+
+        // alert(`Chu vi tam giác là: ${per}`);
+        // alert(`Diện tích tam giác là: ${area}`);
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <script>
+        // Bài 1
+        // Cacsh 1
+        // function camelize(str) {
+        //     return str.replace(/-([a-z])/g, function (match, letter) {
+        //         return letter.toUpperCase();
+        //     });
+        // }
+
+
+        // alert(camelize("background-color")); 
+        // alert(camelize("list-style-image"));
+        // alert(camelize("-webkit-transition"));
+
+
+        // let myString1 = "-background-color-name";
+        // let myStringc = []
+
+        // if (myString1.charAt(0) === "-") {
+        //     let myArr = myString1.split("-")
+        //     for (let i = 0; i < myArr.length; i++) {
+        //         var MyStringa = myArr[i].charAt(0).toUpperCase();
+
+
+        //         var MyStringb = myArr[i].slice(1);
+        //         console.log(MyStringa);
+
+
+        //         myStringc[i] = [MyStringa + MyStringb];
+        //     }
+        //     console.log(myStringc.join(""))
+        // }
+        // else {
+        //     let myArr = myString1.split("-")
+        //     for (let i = 1; i < myArr.length; i++) {
+        //         console.log(MyStringb);
+        //         var MyStringa = myArr[i].charAt(0).toUpperCase();
+        //         var MyStringb = myArr[i].slice(1);
+        //         myStringc[i] = [MyStringa + MyStringb];
+        //     }
+        //     console.log(myArr[0] + myStringc.join(""))
+        // }
+
+
+        // Bài 3
+
+        // function filterRangeInPlace(arr, a, b) {
+        //     for (let i = 0; i < arr.length; i++) {
+        //         let val = arr[i];
+        //         if (val < a || val > b) {
+        //             arr.splice(i, 1); 
+        //             i--;
+        //         }
+        //     }
+        // }
+
+        // let arr = [5, 3, 8, 1];
+        // filterRangeInPlace(arr, 0, 4);
+        // alert(arr);
+
+        // Bài 4
+        let arr = [5, 2, 1, -10, 8];
+        let output = arr.sort(function (a, b) {
+            return b - a;
+        });
+
+        document.write(output.join("&nbsp "))
+
+
+    </script>
+</body>
+
+</html>

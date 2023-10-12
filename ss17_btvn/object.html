@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //         var myInfo = {
+        //             name: "Nhân",
+        //             age: 22,
+        //             address: 'HCM',
+        //             getName: () => console.log("Tên tôi là" + this.name)
+        //         };
+
+        // myInfo.getName()
+
+        // var date = new Date();
+        // var day = parseInt(date.getDate().toString().padStart(2, '0'));
+        // var month = parseInt((date.getMonth() + 1).toString().padStart(2, '0'));
+        // var year = parseInt(date.getFullYear());
+
+
+        // console.log(`${day}/${month}/${year}`);
+        // console.log(typeof day);
+        // console.log(typeof month);
+        // console.log(typeof year);
+
+
+        // var a="A"
+        // var b="B"
+
+        // var c={
+        //     [a]:'Đây là a',
+        //     [b]: 1000
+        // }
+        // console.log(c.A);
+
+
+        // Destructuring cho Array
+
+        // var arrayCourse=['JS', 'Flutter','React']
+        // var [c1, c2, c3]=arrayCourse
+        // console.log(c1,c2,c3);
+
+
+
+
+        // Spread cho Array
+
+        // var courseSpread={
+        //     name: "JS",
+        //     price: 100,
+        //     image: 'ảnh nè',
+        //     children:{
+        //         name: "React"
+        //     }
+        // }
+        // // var {name,...rest}=courseSpread
+        // // console.log(courseSpread);
+
+        // var{name, children:{name}}=courseSpread
+        // console.log("name: ", name);
+
+
+        // var bonus = ["10", "20", "30", "40"];
+        // var randomIndex = Math.floor(Math.random() * bonus.length);
+        // var randomValue = bonus[randomIndex]; 
+        // console.log("random: ", randomValue);
+
+        
+        //Rest operator
+    //     function Spread(...params){
+    //         console.log(params);
+    //     }
+    //    Spread(1,2,3)
+
+
+        //Spread Operator
+        // const arr1=[1,2,3,4]
+        // const copyArr1=[...arr1]
+        // console.log("copy là: ",copyArr1);
+
+        // let a1=[1,2,3,4]
+        // let a2=[5,6,7,8]
+        // console.log(...a1,...a2);
+
+        // var a={a:1, b:2, c:3}
+
+        // var a={a:1 , b:2, c:3}
+        // var b={a:1 , b:2, c:3}
+
+        // console.log(a === b);
+
+        // var ob2={a:1, b:2}
+        // var copy=[...ob2]
+        // console.log(coby);
+
+        
+        // function sayHi(){
+        //     console.log(`this is ${this}`);
+        //     console.log("window", this === window);
+        // }
+        // sayHi()
+
+    //     var u={
+    //         f:"H",
+    //         function sayHi(){
+    //             console.log(`this í, ${this}`);
+    //             console.log("window", this === window);
+    //             console.log("F is",this.f);
+    //         }
+    //     }
+
+    // u.say()
+
+
+    function restOp(a,b,...rest){
+        console.log(a);
+        console.log(b);
+        console.log(...rest);
+    }
+
+    </script>
+</body>
+
+</html>

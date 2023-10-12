@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button class="button">Demo</button>
+
+    <script>
+        // window.addEventListener("load", function () {
+        //     function renderSweetAlert() {
+        //         var template = `
+        //     <div class="sweet-alert">
+        //         <h1>Hello there!!</h1>
+        //         <p>Để Nhân test thử</p>
+        //     </div>
+        // `;
+        //         document.body.insertAdjacentHTML("beforebegin", template);    
+
+
+        //         var sweetAlert = document.querySelector(".sweet-alert");
+        //         if (sweetAlert) {
+        //             setTimeout(() => {
+        //                 sweetAlert.remove();
+        //             }, 1000);
+        //         }
+        //     }
+        //     var button = document.querySelector(".button");
+        //     button.addEventListener("click", renderSweetAlert);
+        // });
+
+        var obj = {
+            key1: 'value1',
+            key2: 'value2',
+            key3: 'value3'
+        };
+
+        for (let key in obj) {
+            let value = obj[key]
+            console.log(value); 
+        }
+
+
+    </script>
+</body>
+
+</html>

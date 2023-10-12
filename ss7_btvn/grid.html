@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content: space-around;
+            background-color: blue;
+            padding: 10px;
+            gap: 20px 50px;
+
+        }
+        .item1{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .item2{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .item3{
+            grid-row-start: 3;
+            grid-row-end: 6;
+        }
+        .footer{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .gird-item{
+            background-color: aquamarine;
+            border: 1px solid black;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<h3>Grid</h3>
+<div class="grid-container">
+    <div class="gird-item item1">header</div>
+    <div class="gird-item item2">navigation</div>
+    <div class="gird-item item3">sidebar</div>
+    <div class="gird-item item4">content1</div>
+    <div class="gird-item item5">content2</div>
+    <div class="gird-item item6">content3</div>
+    <div class="gird-item item7">content4</div>
+    <div class="gird-item item8">content5</div>
+
+    <div class="gird-item footer">footer</div>
+
+</div>
+
+
+</body>
+</html>

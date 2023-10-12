@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // Bài 1
+
+        // var n;
+        // var flag = true;
+
+        // while (flag) {
+        //     n = parseInt(prompt('Hãy cho tôi một số nguyên để tính bình phương: '));
+
+        //     if (n < 2 || n > 100 || isNaN(n)) {
+        //         alert('Vui lòng nhập lại theo đúng yêu cầu (số nguyên từ 2 đến 100) !!');
+        //     } else {
+        //         flag = false;
+        //     }
+        // }
+
+        // if (n % 2 === 0) {
+        //     let result = n ** 2;
+        //     document.write(`Số ${n} này chia hết cho 2 => bình phương nó là ${result}`);
+        // } else {
+        //     alert(`Xin lỗi nhưng số này không chia hết cho 2 nhé !!`);
+        // }
+
+
+
+        // Bài 2
+        // var n;
+        // var flag = true
+
+        // while (flag) {
+        //     n = parseInt(prompt('Hãy cho tôi một số nguyên: \n (Để tính bình phương các số chẵn từ 2 đến số bạn nhập) '));
+
+        //     if (n >= 2 && n <= 100) {
+        //         flag = false
+        //     } else {
+        //         alert('Vui lòng nhập lại theo đúng yêu cầu (số nguyên từ 2 đến 100) !!');
+        //     }
+        // }
+
+        // for (var i = 2; i <= n; i++) {
+        //     if (i % 2 === 0) {
+        //         var result = i ** 2;
+        //         document.write(`Bình phương của số chẵn ${i} là: ${result}<br>`);
+        //     } else {
+        //         continue
+        //     }
+        // }
+
+
+
+        // Bài 3
+
+        // var colors = [
+        //     '#4287f5',
+        //     '#f54269',
+        //     'rgba(235, 64, 52, )',
+        //     'orange',
+        //     'purple',
+        //     'pink',
+        //     'brown',
+        //     'cyan',
+        //     'magenta',
+        //     'yellow'
+        // ];
+
+        // for (var i = 0; i < 10; i++) {
+        //     var random = Math.floor(Math.random() * colors.length);
+        //     var randomColor = colors[random];
+
+        //     console.log(`%c Màu sắc thứ ${i + 1}`, `color: ${randomColor}; font-size: 16px; font-weight: bold;`);
+        // }
+
+
+
+
+
+        // Bài 4
+
+        // for (let i = 1; i <= 100; i++) {
+        //     if (i % 3 === 0 && i % 5 === 0) {
+        //         document.write(`Số ${i} này là FizzBuzz <br>`)
+        //     } else if (i % 3 === 0) {
+        //         document.write(`\n Số ${i} này là Fizz <br>`)
+        //     } else {
+        //         document.write(`\n Số ${i} này là Buzz <br>`)
+        //     }
+        // }
+
+
+        // Bài 5
+        // let num = parseInt(prompt("Nhập số cần kiểm tra số nguyên tố:"));
+        // let isPrime = true;
+
+        // if (num <= 1) {
+        //     isPrime = false;
+        // } else {
+        //     for (let i = 2; i <= Math.sqrt(num); i++) {
+        //         if (num % i === 0) {
+        //             isPrime = false;
+        //             break;
+        //         }
+        //     }
+        // }
+        // if (isPrime) {
+        //     console.log(`${num} là số nguyên tố.`);
+        // } else {
+        //     console.log(`${num} không là số nguyên tố.`);
+        // }
+
+
+        // Bài 6
+
+        // var w = parseInt(prompt('Hãy cho tôi chiều dài để vẽ tam giác'))
+        // var h = parseInt(prompt('Hãy cho tôi chiều rộng để vẽ tam giác'))
+
+        // for (let i = 1; i <= h + 1; i++) {
+        //     for (let j = 1; j <= w + 1 - i; j++) {
+        //         document.write(' '); 
+        //     }
+        //     for (let k = 1; k <= i; k++) {
+        //         document.write('*');
+        //     }
+        //     document.write('<br>');
+        // }
+
+        // var w = parseInt(prompt('Hãy cho tôi chiều dài để vẽ tam giác'))
+        // var h = parseInt(prompt('Hãy cho tôi chiều rộng để vẽ tam giác'))
+
+        // for (let i = 1; i <= h + 1; i++) {
+        //     for (let j = 1; j <= w + 1 - i; j++) {
+        //         document.write('*'); 
+        //     }
+        //     for (let k = 1; k <= i; k++) {
+        //         document.write(' ');
+        //     }
+        //     document.write('<br>');
+        // }
+
+
+
+    </script>
+</body>
+
+</html>
